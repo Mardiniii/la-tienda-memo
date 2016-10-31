@@ -8,6 +8,5 @@ Rails.application.routes.draw do
   resources :purchases
 
   get 'profile' => 'pages#profile'
-
   get 'dashboard' => 'purchases#dashboard'
 end

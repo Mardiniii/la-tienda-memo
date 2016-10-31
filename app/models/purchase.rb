@@ -31,6 +31,15 @@ class Purchase < ApplicationRecord
 
   # Method to calculate user balance
   def self.balance(user)
-    user.purchases.where(status: :pending).sum(&:price)
+    pending_purchases = user.purchases.where(status: :pending)
+    pending_purchases.size > 0 ? pending_purchases.sum(&:price) : 0
   end
 end
+
+
+
+
+
+
+
+
