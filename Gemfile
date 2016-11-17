@@ -24,6 +24,7 @@ gem 'devise'
 
 # Install paperclip gem
 gem "paperclip", "~> 5.0.0"
+gem 'aws-sdk', '~> 2'
 
 group :development, :test do
   gem 'sqlite3'
