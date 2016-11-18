@@ -32,6 +32,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'letter_opener_web', '~> 1.2.0'
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
